@@ -55,41 +55,67 @@
 
         <br><br>
 
-        <label>Sexo:</label>
-
-        <label>
-            <input type="radio" 
-                name="sexo" 
-                id="masculino">Masculino
-        </label>
+        
+        <fieldset>
+            <legend>Grupo</legend>
+            <label>Sexo:</label>
+    
+            <label>
+                <input type="radio" 
+                    name="sexo" 
+                    id="masculino">Masculino
+            </label>
+            <label>
+                <input type="radio" 
+                    name="sexo" 
+                    id="feminino" checked>Feminino                
+            </label>
+    
+            <label>
+                <input type="radio" 
+                    name="sexo" 
+                    id="outros">Outros
+            </label>
+    
+            <br><br>
+    
+            <label>Hobby:</label>
+    
+            <label>
+                <input type="checkbox" 
+                    name="cinema" 
+                    id="cinema" checked>Cinema
+            </label>
+    
+            <label>
+                <input type="checkbox" 
+                    name="futebol" 
+                    id="futebol">Futebol
+            </label>
+        </fieldset>
             
-        <label>
-            <input type="radio" 
-                name="sexo" 
-                id="feminino" checked>Feminino                
-        </label>
-
-        <label>
-            <input type="radio" 
-                name="sexo" 
-                id="outros">Outros
-        </label>
 
         <br><br>
 
-        <label>Hobby:</label>
+        <label for="cidade">Cidade:</label>
+        <select name="cidade" id="cidade">
+            <option disabled selected>Selecione...</option>
+            <option value="ntl">Natal</option>
+            <option value="poa">Porto Alegre</option>
+            <option value="rec">Recife</option>
+            <option value="gru">São Paulo</option>
+        </select>
 
-        <label>
-            <input type="checkbox" 
-                name="cinema" 
-                id="cinema" checked>Cinema
-        </label>
+        <br><br>
 
-        <label>
-            <input type="checkbox" 
-                name="futebol" 
-                id="futebol">Futebol
-        </label>
+        <label for="sugestao">Sugestão:</label>
+        <br>
+        <textarea name="sugestao" 
+            id="sugestao" 
+            cols="30" 
+            rows="5"
+            maxlength="400"
+            placeholder="Sua sugestão aqui..."></textarea>
             
         <br><br>
         <button type="submit">Cadastrar</button>

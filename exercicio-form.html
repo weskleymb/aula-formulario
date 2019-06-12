@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eleição Turma</title>
+</head>
+<body>
+    <form action="http://www.google.com">
+        <table width="80%" align="center" border="1">
+            <tr>
+                <td width="50%">
+                    <fieldset>
+                        <legend>Dados Pessoais</legend>
+                        <label for="nome">Nome:</label><br>
+                        <input type="text" name="nome" id="nome">
+                        <hr>
+                        <label>Sexo:</label><br>
+                        <label for="masculino">
+                            <input type="radio" name="sexo" id="masculino">
+                            Masculino
+                        </label>
+                        <br>
+                        <label for="feminino">
+                            <input type="radio" name="sexo" id="feminino">
+                            Feminino
+                        </label>
+                        <hr>
+                        <label for="cidade">Cidade</label><br>
+                        <select name="cidade" id="cidade">
+                            <option value="natal">Natal</option>
+                            <option value="parnamirim">Parnamirim</option>
+                            <option value="extremoz">Extremoz</option>
+                        </select>
+                        <hr>
+                        <label for="escolaridade">Escolaridade</label><br>
+                        <select name="escolaridade" id="escolaridade">
+                        <option value="fundamental">Fundamental</option>
+                            <option value="medio">Médio</option>
+                            <option value="superior">Superior</option>
+                        </select>
+                    </fieldset>
+                </td>
+                <td valign="top">
+                    <fieldset>
+                        <legend>Candidatos</legend>
+                        <label for="candidato">Candidato</label><br>
+                        <select name="candidato" id="candidato">
+                            <option value="moura">Super Moura</option>
+                            <option value="mossoro">Miguel Mossoro</option>
+                            <option value="tiririca">Tiririca</option>
+                            <option value="rambo">Rambo</option>
+                        </select>
+                        <hr>
+                        <label for="cargo">Cargo:</label><br>
+                        <label for="lider">
+                            <input type="radio" name="cargo" id="lider">
+                            Líder
+                        </label><br>
+                        <label for="vice-lider">
+                            <input type="radio" name="cargo" id="vice-lider">
+                            Vice-líder
+                        </label><br>
+                        <p align="right">
+                            <button type="submit">Votar</button>
+                        </p>
+                    </fieldset>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
